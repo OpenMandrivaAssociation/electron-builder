@@ -11,7 +11,6 @@ URL:            https://github.com/electron-userland/electron-builder
 Source0:         https://registry.npmjs.org/electron-builder/-/%{name}-%{version}.tgz
 Source1:        %{name}-node_modules.tar.gz
 
-BuildRequires:  fdupes
 BuildRequires:  nodejs
 BuildRequires:  nodejs-packaging
 Requires:       bash
