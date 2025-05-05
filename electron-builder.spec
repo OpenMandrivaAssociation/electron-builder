@@ -9,6 +9,7 @@ License:        MIT
 Group:          Development/Languages/Other
 URL:            https://github.com/electron-userland/electron-builder
 Source0:         https://registry.npmjs.org/electron-builder/-/%{name}-%{version}.tgz
+Source1:        %{name}-node_modules.tar.gz
 
 BuildRequires:  fdupes
 BuildRequires:  nodejs
@@ -29,6 +30,7 @@ Group:          Development/Languages/Other
 
 %prep
 %setup -q -n package
+tar -zxf %{S:1}
 
 %install
 %nodejs_install
