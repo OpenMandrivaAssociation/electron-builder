@@ -10,6 +10,7 @@ Group:          Development/Languages/Other
 URL:            https://github.com/electron-userland/electron-builder
 Source0:         https://registry.npmjs.org/electron-builder/-/%{name}-%{version}.tgz
 Source1:        %{name}-node_modules.tar.gz
+Source2:        %{name}-npm-cache.tar.gz
 
 BuildRequires:  nodejs
 BuildRequires:  nodejs-packaging
@@ -30,8 +31,11 @@ Group:          Development/Languages/Other
 %prep
 %setup -q -n package
 tar -zxf %{S:1}
+mkdir -p .npm
+tar -zxf %{S:2}
 
 %install
+export NPM_CONFIG_CACHE=$PWD/.npm
 %nodejs_install
 
 %files -n %{nodejsname}
