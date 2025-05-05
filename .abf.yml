@@ -1,3 +1,4 @@
 sources:
   electron-builder-26.0.12.tgz: 797af2e70efdd96c9ea5d8a8164b8728c90d65ff
-  electron-builder-node_modules.tar.gz: 8fcaea0ed13bd180f32b3b2398b7869ab39fa70c
+  electron-builder-node_modules.tar.gz: 401e9cc4f732422a4a65ec603635107080428c76
+  electron-builder-npm-cache.tar.gz: 4c02a89835bbf57cf14f6a0b5bb3c7a2593d7865
