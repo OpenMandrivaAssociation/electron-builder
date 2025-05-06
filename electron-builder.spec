@@ -15,7 +15,7 @@ Source2:        %{name}-npm-cache.tar.gz
 BuildRequires:  nodejs
 BuildRequires:  nodejs-packaging
 Requires:       bash
-Recommends:     python3
+Recommends:     python
 Provides:       npm(%{name}) = %{version}
 
 %description
